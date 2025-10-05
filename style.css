@@ -1,4 +1,4 @@
-/* --- Global Styles & Variables --- */
+
 :root {
     --primary-color: #2c9a91;
     --secondary-color: #1a535c;
@@ -28,7 +28,6 @@ body {
     margin: 0 auto;
 }
 
-/* --- Header & Navigation --- */
 .site-header {
     background-color: var(--white-color);
     padding: 1rem 0;
@@ -45,7 +44,6 @@ body {
 }
 
 .header-back img {
-  /* width: 80%; */
   max-width: 1200px;
   max-height: 600px;
   border-radius: 8px;
@@ -104,7 +102,6 @@ body {
     width: 100%;
 }
 
-/* --- Mobile Menu --- */
 .hamburger-menu {
     display: none;
     cursor: pointer;
@@ -123,7 +120,7 @@ body {
 .mobile-nav {
     display: none;
     position: fixed;
-    top: 70px; /* Adjust based on header height */
+    top: 70px; 
     left: 0;
     width: 100%;
     background-color: var(--white-color);
@@ -148,7 +145,6 @@ body {
     display: flex;
 }
 
-/* Hamburger animation */
 .hamburger-menu.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -159,8 +155,6 @@ body {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
-
-/* --- Buttons --- */
 .btn {
     padding: 0.75rem 1.5rem;
     border-radius: 50px;
@@ -203,8 +197,6 @@ body {
     transform: translateY(-3px);
 }
 
-
-/* --- Hero Section --- */
 .hero-section {
     background: linear-gradient(to right, #e6f5f3, #e0f2f1);
     text-align: center;
@@ -250,8 +242,6 @@ body {
     100% { transform: translateY(0) rotate(360deg); }
 }
 
-
-/* --- Info & Feature Sections --- */
 .section-title {
     text-align: center;
     font-size: 2.5rem;
@@ -312,8 +302,6 @@ body {
     text-align: left;
 }
 
-
-/* --- Footer --- */
 .site-footer {
     background-color: var(--secondary-color);
     color: #e0e0e0;
@@ -362,7 +350,6 @@ body {
     border-top: 1px solid #3a6b6f;
 }
 
-/* --- Animations & Responsive --- */
 .animate-in {
     opacity: 0;
     transform: translateY(20px);
@@ -389,7 +376,6 @@ body {
     transform: translateY(0);
 }
 
-/* --- Back to top button --- */
 #back-to-top {
     position: fixed;
     bottom: 20px;
@@ -415,7 +401,6 @@ body {
     background-color: var(--secondary-color);
 }
 
-/* --- Media Queries --- */
 @media (max-width: 992px) {
     .nav-links, .main-nav .btn-primary { display: none; }
     .hamburger-menu { display: flex; }
@@ -434,4 +419,5 @@ body {
 @media (max-width: 480px) {
     .footer-grid { grid-template-columns: 1fr; }
 }
+
 
