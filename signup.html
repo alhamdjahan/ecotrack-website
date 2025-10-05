@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - EcoTrack</title>
+    <!-- Main stylesheet for header/footer consistency -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Specific stylesheet for this page -->
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Re-used Header Section -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">EcoTrack 🌿</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="learn.html">Learn More</a></li>
+                </ul>
+                <a href="signup.html" class="btn btn-primary active">Sign Up</a>
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Re-used Mobile Navigation -->
+    <div class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="calculator.html">Calculator</a>
+        <a href="about.html">About Us</a>
+        <a href="learn.html">Learn More</a>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="signup-section">
+            <div class="container">
+                <div class="signup-container reveal">
+                    <div class="signup-image">
+                         <img src="https://placehold.co/600x800/E0F2F1/1A535C?text=Join+Us" alt="Green leaves illustration">
+                    </div>
+                    <div class="signup-form">
+                        <h1>Join EcoTrack</h1>
+                        <p>Create an account to track your progress and join a community dedicated to sustainability.</p>
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required placeholder="e.g., Ananya Sharma">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="you@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" required placeholder="Minimum 8 characters">
+                            </div>
+                            <button type="submit" class="btn btn-form">Create Account</button>
+                        </form>
+                        <div class="form-footer">
+                            <p>Already have an account? <a href="#">Log In</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Re-used Footer Section (abbreviated for clarity) -->
+    <footer class="site-footer">
+       <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3 class="footer-logo">EcoTrack 🌿</h3>
+                    <p>Empowering individuals in India to make sustainable choices for a better tomorrow.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigate</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="calculator.html">Calculator</a></li>
+                        <li><a href="learn.html">Learn More</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EcoTrack. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- The main script handles all animations -->
+    <script src="signup.js"></script>
+</body>
+</html>

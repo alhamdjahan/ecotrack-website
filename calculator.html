@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator India 🇮🇳</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Calculate Your Carbon Footprint</h1>
+            <p>Estimate your annual environmental impact based on your lifestyle in India.</p>
+        </header>
+
+        <form id="footprint-form">
+
+            <div class="form-section">
+                <h2>⚡️ Home Energy</h2>
+                <div class="form-group">
+                    <label for="electricity">Monthly Electricity Consumption (in kWh):</label>
+                    <input type="number" id="electricity" placeholder="eg. 250" required>
+                    <small>Check your electricity bill for kWh or "units" consumed.</small>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>🚗 Transportation</h2>
+                <div class="form-group">
+                    <label for="car-kms">Weekly Distance by Petrol/Diesel Car (km):</label>
+                    <input type="number" id="car-kms" placeholder="eg. 100" required>
+                </div>
+                 <div class="form-group">
+                    <label for="flight-hours">Total Hours Flown in the Last Year (Domestic):</label>
+                    <input type="number" id="flight-hours" placeholder="eg. 10" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>🍲 Diet</h2>
+                 <div class="form-group">
+                    <label for="diet">How would you describe your diet?</label>
+                    <select id="diet" required>
+                        <option value="veg">Vegetarian</option>
+                        <option value="non-veg-low">Low Meat-eater (1-2 times/week)</option>
+                        <option value="non-veg-high">High Meat-eater (Most days)</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit">Calculate Footprint</button>
+        </form>
+
+        <div id="result-container" class="hidden">
+            <h2>Your Estimated Annual Footprint</h2>
+            <p id="total-footprint">0</p>
+            <span>tonnes of CO₂e per year</span>
+            <div class="comparison">
+                <p>The average carbon footprint in India is around **2 tonnes** per year. A sustainable target is below **2.5 tonnes**.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
