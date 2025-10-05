@@ -1,6 +1,4 @@
-/* --- Learn More Page Specific Styles --- */
 
-/* Learn Hero Section */
 .learn-hero {
     background: var(--background-color);
     padding: 5rem 0;
@@ -21,7 +19,6 @@
     color: #555;
 }
 
-/* Tip Section Layout */
 .tip-section, .tip-section-alt {
     padding: 5rem 0;
 }
@@ -75,15 +72,12 @@
     font-weight: bold;
 }
 
-/* For alternating layout, swap columns on alt sections */
 .tip-section-alt .tip-grid .tip-content {
     order: 2;
 }
 .tip-section-alt .tip-grid .tip-image {
     order: 1;
 }
-
-/* Responsive adjustments */
 @media (max-width: 992px) {
     .tip-grid {
         grid-template-columns: 1fr;
@@ -104,3 +98,4 @@
 @media (max-width: 768px) {
     .learn-hero h1 { font-size: 2.2rem; }
 }
+
