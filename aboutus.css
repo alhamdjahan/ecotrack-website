@@ -1,6 +1,4 @@
-/* --- About Page Specific Styles --- */
 
-/* About Hero Section */
 .about-hero {
     background: linear-gradient(to right, #e0f2f1, #e6f5f3);
     padding: 5rem 0;
@@ -21,7 +19,7 @@
     color: #555;
 }
 
-/* Mission Section */
+
 .mission-section {
     padding: 5rem 0;
     background-color: var(--white-color);
@@ -49,7 +47,6 @@
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
-/* Story Section */
 .story-section {
     padding: 5rem 0;
 }
@@ -79,7 +76,6 @@
     margin-top: 0;
 }
 
-/* CTA Section */
 .cta-section {
     background-color: var(--secondary-color);
     color: var(--white-color);
@@ -96,7 +92,6 @@
     margin-bottom: 2rem;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 992px) {
     .mission-content {
         grid-template-columns: 1fr;
@@ -116,3 +111,4 @@
     .about-hero h1 { font-size: 2.2rem; }
     .story-grid { grid-template-columns: 1fr; }
 }
+
