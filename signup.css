@@ -1,4 +1,3 @@
-/* --- Sign Up Page Specific Styles --- */
 
 .signup-section {
     padding: 6rem 0;
@@ -109,13 +108,12 @@
     text-decoration: underline;
 }
 
-/* Responsive adjustments */
 @media (max-width: 992px) {
     .signup-container {
         grid-template-columns: 1fr;
     }
     .signup-image {
-        display: none; /* Hide image on smaller screens */
+        display: none;
     }
     .signup-form {
         padding: 3rem;
@@ -127,3 +125,4 @@
     .signup-form h1 { font-size: 2rem; }
     .signup-form { padding: 2rem; }
 }
+
